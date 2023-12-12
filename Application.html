@@ -1,88 +1,108 @@
-<!doctype html>
-<html>
- <head>
-  <title>FORMULAIRE</title>
-  <meta charset = "utf-8">
- </head>
- <body>
-    <form size="40">
-	 <fieldset>
-	   <legend> Vos Coordonnées</legend>
-	   <table>
-	    <tr>
-         <td>Civilité</td>        
-		 <td><input type="radio" value="Mademoiselle" name="statut" id="made"size="80"/> <label for="made">Mademoiselle</label>    
-		 <input type="radio" value="Madame" name="statut" id="Madame"/> <label for="Madame">Madame</label>
-		 <input type="radio" value="Monsieur" name="statut" id="Monsieur"/> <label for="Monsieur">Monsieur</label></td>
-		</td>
-		</tr>
-	    <tr>
-		 <td><label for="Nom/prenom">Nom/Prénom</label></td> 
-		 <td><input type="text" name="Nom/prenom" id="Nom/prenom"/ size="150"></td>
-		</tr>
-		<tr>
-		 <td><label for="date">Date de naissance</label></td> 
-		 <td><input type="date" name="date" id="date" size="150"/></td>
-		 </tr>
-		 <tr>
-		 <td><label for="mail">Mail</label></td> 
-		 <td><input type="mail" name="mail" id="mail" size="150"/></td>
-		</tr>
-		<tr>
-		 <td><label for="">Adresse</label></td>
-		<td><textarea name="adresse" id="adresse" placeholder="Rue No boite postal" cols="152" rows="2"></textarea></td>
-		</tr>
-		<tr>
-		 <td><label for="code postal">code postal/</label></br>
-		     <label for="localite">Localite</label></br>
-		     <label for="Gouvernorat">Gouvernorat</label>
-		 </td>		 
-		  <td><input type="code postal" name="code postal" id="code postal"/>
-		    <input type="text" name="localite" id="localite" placeholder="Jendouba"/>
-		    <select name="Gouvernorat" id="Gouvernorat">
-			<option value="Jendouba">Jendouba</option>
-			<option value="RCI">RCI</option>
-			<option value="RG">RG</option>
-			</select>
-		  </td>
-		</tr>
-		<tr>
-		<td><label for="Pays"> Choisir Votre Pays</label></td>
-		<td><select name="Pays" id="Pays">
-			<option value="Mali">Tunisie</option>
-			<option value="RCI">RCI</option>
-			<option value="RG">RG</option>
-		</select>
-		</td>
-		</tr>
-         <tr>
-         <td><label>Plateforme(s)</label></td>		 
-	     <td><input type="checkbox" name="Windows" id="Windows"/>
-         <label for="Windows">Windows</label>		 
-         <input type="checkbox" name="Macinthos" id="Macinthos">		             
-		<label for="Macinthos">Macinthos</label>
-         <input type="checkbox" name="unix" id="unix">		             
-		<label for="unix">Unix</label></td> 		
-		</tr>
-		<tr>
-		<td><label for="Pays">Application(s)</label></td>
-		<td><select name="Pays" id="Pays" size="5">
-			<option value="b">Bureautique</option>
-			<option value="d">DAO</option>
-			<option value="s">Statistique</option>
-			<option value="s">SGBD</option>
-			<option value="s">Internet</option>
-			</select>
-		</td>
-		</tr>
-		<tr>
-		<td> </td>
-		<td><input type="submit" value="soummettre le formulaire"/>
-		<input type="reset" value="Effacer"/>
-		<input type="file" value="Choisir un fichier" name="fichier"/></td>
-		</tr>
-	 </fieldset>
-	 </table>
-	</form>
- <body>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>FORMULAIRE</title>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <form>
+            <fieldset>
+                <legend>Vos Coordonnées</legend>
+                <div class="mb-3">
+                    <label class="form-label">Civilité</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Mademoiselle" name="statut" id="made">
+                        <label class="form-check-label" for="made">Mademoiselle</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Madame" name="statut" id="Madame">
+                        <label class="form-check-label" for="Madame">Madame</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Monsieur" name="statut" id="Monsieur">
+                        <label class="form-check-label" for="Monsieur">Monsieur</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Nom/prenom">Nom/Prénom</label>
+                    <input class="form-control" type="text" name="Nom/prenom" id="Nom/prenom" size="150">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="date">Date de naissance</label>
+                    <input class="form-control" type="date" name="date" id="date" size="150">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="mail">Mail</label>
+                    <input class="form-control" type="email" name="mail" id="mail" size="150">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="adresse">Adresse</label>
+                    <textarea class="form-control" name="adresse" id="adresse" placeholder="Rue No boite postal" cols="152" rows="2"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="code postal">Code postal/Localité/Gouvernorat</label>
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" name="code postal" id="code postal">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="localite" id="localite" placeholder="Jendouba">
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="Gouvernorat" id="Gouvernorat">
+                                <option value="Jendouba">Jendouba</option>
+                                <option value="RCI">RCI</option>
+                                <option value="RG">RG</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Pays">Choisir Votre Pays</label>
+                    <select class="form-select" name="Pays" id="Pays">
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="RCI">RCI</option>
+                        <option value="RG">RG</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Plateforme(s)</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Windows" id="Windows">
+                        <label class="form-check-label" for="Windows">Windows</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Macinthos" id="Macinthos">
+                        <label class="form-check-label" for="Macinthos">Macinthos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="unix" id="unix">
+                        <label class="form-check-label" for="unix">Unix</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Applications">Applications</label>
+                    <select class="form-select" name="Applications" id="Applications" size="5">
+                        <option value="b">Bureautique</option>
+                        <option value="d">DAO</option>
+                        <option value="s">Statistique</option>
+                        <option value="s">SGBD</option>
+                        <option value="s">Internet</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
+                    <button class="btn btn-secondary" type="reset">Effacer</button>
+                    <input class="form-control" type="file" value="Choisir un fichier" name="fichier">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (optionnel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
