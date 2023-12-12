@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+ <head>
+  <title>FORMULAIRE</title>
+  <meta charset = "utf-8">
+ </head>
+ <body>
+    <form size="40">
+	 <fieldset>
+	   <legend> Vos Coordonnées</legend>
+	   <table>
+	    <tr>
+         <td>Civilité</td>        
+		 <td><input type="radio" value="Mademoiselle" name="statut" id="made"size="80"/> <label for="made">Mademoiselle</label>    
+		 <input type="radio" value="Madame" name="statut" id="Madame"/> <label for="Madame">Madame</label>
+		 <input type="radio" value="Monsieur" name="statut" id="Monsieur"/> <label for="Monsieur">Monsieur</label></td>
+		</td>
+		</tr>
+	    <tr>
+		 <td><label for="Nom/prenom">Nom/Prénom</label></td> 
+		 <td><input type="text" name="Nom/prenom" id="Nom/prenom"/ size="150"></td>
+		</tr>
+		<tr>
+		 <td><label for="date">Date de naissance</label></td> 
+		 <td><input type="date" name="date" id="date" size="150"/></td>
+		 </tr>
+		 <tr>
+		 <td><label for="mail">Mail</label></td> 
+		 <td><input type="mail" name="mail" id="mail" size="150"/></td>
+		</tr>
+		<tr>
+		 <td><label for="">Adresse</label></td>
+		<td><textarea name="adresse" id="adresse" placeholder="Rue No boite postal" cols="152" rows="2"></textarea></td>
+		</tr>
+		<tr>
+		 <td><label for="code postal">code postal/</label></br>
+		     <label for="localite">Localite</label></br>
+		     <label for="Gouvernorat">Gouvernorat</label>
+		 </td>		 
+		  <td><input type="code postal" name="code postal" id="code postal"/>
+		    <input type="text" name="localite" id="localite" placeholder="Jendouba"/>
+		    <select name="Gouvernorat" id="Gouvernorat">
+			<option value="Jendouba">Jendouba</option>
+			<option value="RCI">RCI</option>
+			<option value="RG">RG</option>
+			</select>
+		  </td>
+		</tr>
+		<tr>
+		<td><label for="Pays"> Choisir Votre Pays</label></td>
+		<td><select name="Pays" id="Pays">
+			<option value="Mali">Tunisie</option>
+			<option value="RCI">RCI</option>
+			<option value="RG">RG</option>
+		</select>
+		</td>
+		</tr>
+         <tr>
+         <td><label>Plateforme(s)</label></td>		 
+	     <td><input type="checkbox" name="Windows" id="Windows"/>
+         <label for="Windows">Windows</label>		 
+         <input type="checkbox" name="Macinthos" id="Macinthos">		             
+		<label for="Macinthos">Macinthos</label>
+         <input type="checkbox" name="unix" id="unix">		             
+		<label for="unix">Unix</label></td> 		
+		</tr>
+		<tr>
+		<td><label for="Pays">Application(s)</label></td>
+		<td><select name="Pays" id="Pays" size="5">
+			<option value="b">Bureautique</option>
+			<option value="d">DAO</option>
+			<option value="s">Statistique</option>
+			<option value="s">SGBD</option>
+			<option value="s">Internet</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+		<td> </td>
+		<td><input type="submit" value="soummettre le formulaire"/>
+		<input type="reset" value="Effacer"/>
+		<input type="file" value="Choisir un fichier" name="fichier"/></td>
+		</tr>
+	 </fieldset>
+	 </table>
+	</form>
+ <body>
+<html>
